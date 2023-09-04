@@ -8,7 +8,7 @@ const route = require('./router/router.js');
 
 const app = express();
 
-const staticSource = express.static(path.join(__dirname, 'build'));
+const staticSource = express.static(path.join(__dirname, '../build'));
 
 app.use(staticSource);
 
