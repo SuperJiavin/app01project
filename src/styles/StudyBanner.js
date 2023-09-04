@@ -42,13 +42,44 @@ const StudyBannerWrap = styled.section`
     height: 300px;
     background-color: #ffffff;
   }
-  div[class='StudyBanner_bg_div02'] h1 {
+  h1[class='Sbg_div02_h1'] {
     width: 230px;
     height: 45px;
     background-color: #9bceea;
     text-align: center;
     line-height: 45px;
     color: #ffffff;
+  }
+  ul[class='Sbg_div02_ul'] li {
+    width: 230px;
+    height: 60px;
+    padding-top: 10px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+  }
+  ul[class='Sbg_div02_ul'] li h3 {
+    font-weight: normal;
+    color: #4e4e4e;
+  }
+  ul[class='Sbg_div02_ul'] li span {
+    color: #bdbdbd;
+    font-size: 12px;
+  }
+  ul[class='Sbg_div02_ul'] li:last-child {
+    display: flex;
+    justify-content: center;
+    border-bottom: none;
+  }
+  ul[class='Sbg_div02_ul'] li h1 {
+    width: 200px;
+    height: 45px;
+    border: 1px solid #22b0ff;
+    color: #22b0ff;
+    text-align: center;
+    line-height: 45px;
+  }
+  ul[class='Sbg_div02_ul'] li h1 a {
+    color: #22b0ff;
   }
 `;
 

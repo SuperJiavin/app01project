@@ -38,7 +38,26 @@ const StudyBanner = memo(() => {
             </ul>
           </div>
           <div className='StudyBanner_bg_div02'>
-            <h1>我的课程表</h1>
+            <h1 className='Sbg_div02_h1'>我的课程表</h1>
+            <ul className='Sbg_div02_ul'>
+              <li>
+                <h3>继续学习程序设计</h3>
+                <span>正在学习使用函数</span>
+              </li>
+              <li>
+                <h3>继续学习程序设计</h3>
+                <span>正在学习使用函数</span>
+              </li>
+              <li>
+                <h3>继续学习程序设计</h3>
+                <span>正在学习使用函数</span>
+              </li>
+              <li>
+                <h1>
+                  <a href='javascript:;'>全部课程</a>
+                </h1>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
