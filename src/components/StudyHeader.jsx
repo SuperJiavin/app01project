@@ -1,7 +1,20 @@
 import React, { memo } from 'react';
 import StudyHeaderWrap from '@/styles/StudyHeader.js';
+import axios from 'axios';
 
 const StudyHeader = memo(() => {
+  const btnClick = () => {
+    const token = 'qwerabsdefghijk';
+    axios({
+      method: 'get',
+      url: 'http://127.0.0.1:8080/api/getbook',
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    }).then((res) => {
+      console.log(res.data);
+    });
+  };
   return (
     <StudyHeaderWrap>
       <div className='section'>
@@ -21,11 +34,17 @@ const StudyHeader = memo(() => {
             </ul>
           </div>
           <div className='sh_input'>
-            <input type="text" placeholder='请输入关键字'/>
-            <button>按钮</button>
+            <input
+              type='text'
+              placeholder='请输入关键字'
+            />
+            <button onClick={(e) => btnClick()}>按钮</button>
           </div>
           <div className='sh_login'>
-            <img src={require("@/assets/images/login.png")} alt="" />
+            <img
+              src={require('@/assets/images/login.png')}
+              alt=''
+            />
           </div>
         </div>
       </div>
